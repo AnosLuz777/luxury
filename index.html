@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>55ANTISYSTEM • Luxury</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<div class="background"></div>
+
+<header class="topbar">
+
+    <div class="brand">
+
+        <div class="brand-mark">
+            55
+        </div>
+
+        <div class="brand-text">
+
+            <strong>
+                ANTISYSTEM
+            </strong>
+
+            <span>
+                LUXURY
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="top-actions">
+
+        <div
+            class="status-pill"
+            id="connectionStatus">
+            ● Desconectado
+        </div>
+
+        <button
+            class="icon-button"
+            id="refreshButton"
+            type="button">
+            ↻
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="app">
+
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                SALA DO FUTURO • LUXURY CONNECT
+            </span>
+
+            <h1>
+                Luxury
+            </h1>
+
+            <p>
+                Painel privado para acompanhar
+                suas atividades da Sala do Futuro
+                através da sessão oficial.
+            </p>
+
+            <div class="buttons">
+
+                <button
+                    class="primary"
+                    id="connectButton"
+                    type="button">
+                    Acessar Sala do Futuro
+                </button>
+
+                <button
+                    class="secondary"
+                    id="syncButton"
+                    type="button">
+                    Sincronizar
+                </button>
+
+            </div>
+
+            <div class="security">
+
+                O login é realizado diretamente
+                na Sala do Futuro.
+                O Luxury não solicita nem salva
+                sua senha.
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="hero-glow"></div>
+
+            <div class="circle"></div>
+
+            <div class="hero-number">
+                55
+            </div>
+
+            <div class="hero-label">
+                PRIVATE SYSTEM
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="command-center">
+
+        <div class="section-title">
+
+            <div>
+
+                <span class="eyebrow">
+                    COMMAND CENTER
+                </span>
+
+                <h2>
+                    Suas atividades
+                </h2>
+
+            </div>
+
+            <span id="lastUpdate">
+                Aguardando sincronização
+            </span>
+
+        </div>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <span>
+                    Pendentes
+                </span>
+
+                <strong id="pendingCount">
+                    0
+                </strong>
+
+                <small>
+                    Atividades pendentes
+                </small>
+
+            </div>
+
+
+            <div class="card expired">
+
+                <span>
+                    Expiradas
+                </span>
+
+                <strong id="expiredCount">
+                    0
+                </strong>
+
+                <small>
+                    Atividades expiradas
+                </small>
+
+            </div>
+
+
+            <div class="card total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="totalCount">
+                    0
+                </strong>
+
+                <small>
+                    Todas as atividades
+                </small>
+
+            </div>
+
+
+            <div class="card value">
+
+                <span>
+                    Valor estimado
+                </span>
+
+                <strong id="totalValue">
+                    R$ 0,00
+                </strong>
+
+                <small>
+                    R$ 0,15 por atividade
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="main-grid">
+
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        CONEXÃO
+                    </span>
+
+                    <h3>
+                        Sala do Futuro
+                    </h3>
+
+                </div>
+
+                <div
+                    class="online-dot"
+                    id="onlineDot">
+                </div>
+
+            </div>
+
+
+            <div class="info">
+
+                <div class="info-row">
+
+                    <span>
+                        Status
+                    </span>
+
+                    <strong id="connectionDetail">
+                        Aguardando login
+                    </strong>
+
+                </div>
+
+
+                <div class="info-row">
+
+                    <span>
+                        Fonte
+                    </span>
+
+                    <strong>
+                        Sala do Futuro
+                    </strong>
+
+                </div>
+
+
+                <div class="info-row">
+
+                    <span>
+                        Última atualização
+                    </span>
+
+                    <strong id="detailUpdate">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="message"
+                id="messageBox">
+
+                Clique em
+                "Acessar Sala do Futuro"
+                para começar.
+
+            </div>
+
+        </section>
+
+
+        <section class="panel price-panel">
+
+            <span class="eyebrow">
+                CÁLCULO
+            </span>
+
+            <h3>
+                Estimativa
+            </h3>
+
+
+            <div
+                class="big-price"
+                id="priceBig">
+
+                R$ 0,00
+
+            </div>
+
+
+            <div class="price-row">
+
+                <span>
+                    Quantidade
+                </span>
+
+                <strong id="priceQuantity">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="price-row">
+
+                <span>
+                    Valor por atividade
+                </span>
+
+                <strong>
+                    R$ 0,15
+                </strong>
+
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <section class="panel progress-panel">
+
+        <span class="eyebrow">
+            PROGRESSO
+        </span>
+
+        <h3>
+            Atividades encontradas
+        </h3>
+
+
+        <div class="progress-track">
+
+            <div
+                class="progress-bar"
+                id="progressBar">
+            </div>
+
+        </div>
+
+
+        <div class="progress-info">
+
+            <span id="progressText">
+                0 atividades
+            </span>
+
+            <span id="progressPercent">
+                0%
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <section class="main-grid">
+
+
+        <section class="panel">
+
+            <span class="eyebrow">
+                HISTÓRICO
+            </span>
+
+            <h3>
+                Sincronizações
+            </h3>
+
+            <div
+                class="history-list"
+                id="historyList">
+
+                <div class="empty-state">
+                    Nenhuma sincronização realizada.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <span class="eyebrow">
+                ATIVIDADE
+            </span>
+
+            <h3>
+                Gráfico
+            </h3>
+
+
+            <div class="chart">
+
+                <div
+                    class="chart-bars"
+                    id="chartBars">
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <section class="main-grid">
+
+
+        <section class="panel">
+
+            <span class="eyebrow">
+                EVENTOS
+            </span>
+
+            <h3>
+                Central de notificações
+            </h3>
+
+            <div
+                class="notification-list"
+                id="notificationList">
+
+                <div class="empty-state">
+                    Nenhum evento recente.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <span class="eyebrow">
+                PERFIL
+            </span>
+
+            <h3>
+                Sessão atual
+            </h3>
+
+
+            <div class="profile">
+
+                <div class="profile-avatar">
+                    55
+                </div>
+
+                <div>
+
+                    <strong>
+                        Sala do Futuro
+                    </strong>
+
+                    <span id="profileStatus">
+                        Desconectado
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                A autenticação acontece
+                diretamente no navegador
+                da Sala do Futuro.
+            </p>
+
+        </section>
+
+    </section>
+
+
+    <section class="bottom-grid">
+
+
+        <div class="panel">
+
+            <span class="eyebrow">
+                SUPORTE
+            </span>
+
+            <h3>
+                Precisa de ajuda?
+            </h3>
+
+            <p>
+                Entre em contato através
+                dos canais abaixo.
+            </p>
+
+
+            <div class="links">
+
+                <a
+                    href="https://wa.me/5511930438136"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    WhatsApp
+
+                </a>
+
+
+                <a
+                    href="https://discord.gg/FFE5UQFBWu"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Discord
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="panel">
+
+            <span class="eyebrow">
+                SEGURANÇA
+            </span>
+
+            <h3>
+                Autenticação oficial
+            </h3>
+
+            <p>
+                O navegador oficial da
+                Sala do Futuro é utilizado
+                para realizar a autenticação.
+                O Luxury não armazena sua senha.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    55ANTISYSTEM • LUXURY
+
+</footer>
+
+
+<script>
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+
+
+            var connectButton =
+                document.getElementById(
+                    "connectButton"
+                );
+
+
+            var syncButton =
+                document.getElementById(
+                    "syncButton"
+                );
+
+
+            var refreshButton =
+                document.getElementById(
+                    "refreshButton"
+                );
+
+
+            var messageBox =
+                document.getElementById(
+                    "messageBox"
+                );
+
+
+            var connectionStatus =
+                document.getElementById(
+                    "connectionStatus"
+                );
+
+
+            var connectionDetail =
+                document.getElementById(
+                    "connectionDetail"
+                );
+
+
+            var profileStatus =
+                document.getElementById(
+                    "profileStatus"
+                );
+
+
+            var onlineDot =
+                document.getElementById(
+                    "onlineDot"
+                );
+
+
+            var pendingCount =
+                document.getElementById(
+                    "pendingCount"
+                );
+
+
+            var expiredCount =
+                document.getElementById(
+                    "expiredCount"
+                );
+
+
+            var totalCount =
+                document.getElementById(
+                    "totalCount"
+                );
+
+
+            var totalValue =
+                document.getElementById(
+                    "totalValue"
+                );
+
+
+            var priceBig =
+                document.getElementById(
+                    "priceBig"
+                );
+
+
+            var priceQuantity =
+                document.getElementById(
+                    "priceQuantity"
+                );
+
+
+            var lastUpdate =
+                document.getElementById(
+                    "lastUpdate"
+                );
+
+
+            var detailUpdate =
+                document.getElementById(
+                    "detailUpdate"
+                );
+
+
+            var progressBar =
+                document.getElementById(
+                    "progressBar"
+                );
+
+
+            var progressPercent =
+                document.getElementById(
+                    "progressPercent"
+                );
+
+
+            var progressText =
+                document.getElementById(
+                    "progressText"
+                );
+
+
+            var historyList =
+                document.getElementById(
+                    "historyList"
+                );
+
+
+            var notificationList =
+                document.getElementById(
+                    "notificationList"
+                );
+
+
+            var chartBars =
+                document.getElementById(
+                    "chartBars"
+                );
+
+
+            var historico = [];
+
+            var notificacoes = [];
+
+            var grafico = [];
+
+            var conectando = false;
+
+            var sincronizando = false;
+
+
+            function hora() {
+
+                return new Date().toLocaleTimeString(
+                    "pt-BR",
+                    {
+                        hour: "2-digit",
+                        minute: "2-digit"
+                    }
+                );
+
+            }
+
+
+            function dinheiro(valor) {
+
+                var numero = Number(valor);
+
+                if (isNaN(numero)) {
+                    numero = 0;
+                }
+
+                return numero.toLocaleString(
+                    "pt-BR",
+                    {
+                        style: "currency",
+                        currency: "BRL"
+                    }
+                );
+
+            }
+
+
+            function mensagem(texto, erro) {
+
+                messageBox.textContent = texto;
+
+                if (erro === true) {
+
+                    messageBox.classList.add(
+                        "error"
+                    );
+
+                } else {
+
+                    messageBox.classList.remove(
+                        "error"
+                    );
+
+                }
+
+            }
+
+
+            function conexao(ativo) {
+
+                if (ativo) {
+
+                    connectionStatus.textContent =
+                        "● Conectado";
+
+                    connectionDetail.textContent =
+                        "Sessão ativa";
+
+                    profileStatus.textContent =
+                        "Conectado";
+
+                    onlineDot.classList.add(
+                        "active"
+                    );
+
+                } else {
+
+                    connectionStatus.textContent =
+                        "● Desconectado";
+
+                    connectionDetail.textContent =
+                        "Aguardando login";
+
+                    profileStatus.textContent =
+                        "Desconectado";
+
+                    onlineDot.classList.remove(
+                        "active"
+                    );
+
+                }
+
+            }
+
+
+            function atualizar(dados) {
+
+                var pendentes =
+                    Number(dados.pendentes);
+
+                var expiradas =
+                    Number(dados.expiradas);
+
+                var total =
+                    Number(dados.total);
+
+                var valor =
+                    Number(dados.valor);
+
+
+                if (isNaN(pendentes)) {
+                    pendentes = 0;
+                }
+
+                if (isNaN(expiradas)) {
+                    expiradas = 0;
+                }
+
+                if (isNaN(total)) {
+                    total =
+                        pendentes +
+                        expiradas;
+                }
+
+                if (isNaN(valor)) {
+                    valor =
+                        total * 0.15;
+                }
+
+
+                pendingCount.textContent =
+                    pendentes;
+
+
+                expiredCount.textContent =
+                    expiradas;
+
+
+                totalCount.textContent =
+                    total;
+
+
+                totalValue.textContent =
+                    dinheiro(valor);
+
+
+                priceBig.textContent =
+                    dinheiro(valor);
+
+
+                priceQuantity.textContent =
+                    total;
+
+
+                var horario = hora();
+
+
+                lastUpdate.textContent =
+                    horario;
+
+
+                detailUpdate.textContent =
+                    "Sincronizado às " +
+                    horario;
+
+
+                var porcentagem = total;
+
+
+                if (porcentagem > 100) {
+                    porcentagem = 100;
+                }
+
+
+                if (porcentagem < 0) {
+                    porcentagem = 0;
+                }
+
+
+                progressBar.style.width =
+                    porcentagem + "%";
+
+
+                progressPercent.textContent =
+                    porcentagem + "%";
+
+
+                progressText.textContent =
+                    total +
+                    " atividades";
+
+
+                historico.unshift({
+
+                    hora: horario,
+
+                    total: total
+
+                });
+
+
+                if (historico.length > 6) {
+
+                    historico.pop();
+
+                }
+
+
+                mostrarHistorico();
+
+
+                grafico.push(total);
+
+
+                if (grafico.length > 8) {
+
+                    grafico.shift();
+
+                }
+
+
+                mostrarGrafico();
+
+            }
+
+
+            function mostrarHistorico() {
+
+                var html = "";
+
+
+                if (historico.length === 0) {
+
+                    historyList.innerHTML =
+                        "<div class=\"empty-state\">" +
+                        "Nenhuma sincronização realizada." +
+                        "</div>";
+
+                    return;
+
+                }
+
+
+                for (
+                    var i = 0;
+                    i < historico.length;
+                    i++
+                ) {
+
+                    html +=
+                        "<div class=\"history-item\">" +
+
+                        "<div>" +
+
+                        "<strong>" +
+                        "Sincronização concluída" +
+                        "</strong>" +
+
+                        "<span>" +
+                        historico[i].hora +
+                        "</span>" +
+
+                        "</div>" +
+
+                        "<span>" +
+                        historico[i].total +
+                        " atividades" +
+                        "</span>" +
+
+                        "</div>";
+
+                }
+
+
+                historyList.innerHTML =
+                    html;
+
+            }
+
+
+            function mostrarGrafico() {
+
+                var maior = 1;
+
+
+                for (
+                    var i = 0;
+                    i < grafico.length;
+                    i++
+                ) {
+
+                    if (
+                        grafico[i] >
+                        maior
+                    ) {
+
+                        maior =
+                            grafico[i];
+
+                    }
+
+                }
+
+
+                var html = "";
+
+
+                for (
+                    var j = 0;
+                    j < grafico.length;
+                    j++
+                ) {
+
+                    var altura =
+                        grafico[j] *
+                        100 /
+                        maior;
+
+
+                    if (altura < 5) {
+
+                        altura = 5;
+
+                    }
+
+
+                    html +=
+                        "<div " +
+                        "class=\"chart-bar\" " +
+                        "style=\"height:" +
+                        altura +
+                        "%\">" +
+                        "</div>";
+
+                }
+
+
+                chartBars.innerHTML =
+                    html;
+
+            }
+
+
+            function notificacao(texto) {
+
+                notificacoes.unshift({
+
+                    texto: texto,
+
+                    hora: hora()
+
+                });
+
+
+                if (
+                    notificacoes.length > 5
+                ) {
+
+                    notificacoes.pop();
+
+                }
+
+
+                var html = "";
+
+
+                for (
+                    var i = 0;
+                    i < notificacoes.length;
+                    i++
+                ) {
+
+                    html +=
+                        "<div class=\"notification-item\">" +
+
+                        "<div>" +
+
+                        "<strong>" +
+                        notificacoes[i].texto +
+                        "</strong>" +
+
+                        "<span>" +
+                        notificacoes[i].hora +
+                        "</span>" +
+
+                        "</div>" +
+
+                        "</div>";
+
+                }
+
+
+                notificationList.innerHTML =
+                    html;
+
+            }
+
+
+            function conectar() {
+
+                if (conectando) {
+                    return;
+                }
+
+
+                conectando = true;
+
+
+                connectButton.disabled =
+                    true;
+
+
+                connectButton.textContent =
+                    "Abrindo...";
+
+
+                mensagem(
+                    "Abrindo a Sala do Futuro..."
+                );
+
+
+                fetch(
+                    "/api/sala-do-futuro/conectar",
+                    {
+                        method: "GET",
+                        cache: "no-store"
+                    }
+                )
+                .then(function (resposta) {
+
+                    return resposta.json();
+
+                })
+                .then(function (dados) {
+
+
+                    if (
+                        dados.sucesso !== true
+                    ) {
+
+                        throw new Error(
+                            dados.erro ||
+                            "Erro ao conectar."
+                        );
+
+                    }
+
+
+                    conexao(true);
+
+
+                    notificacao(
+                        "Sala do Futuro aberta"
+                    );
+
+
+                    mensagem(
+                        "Navegador aberto. Faça o login e depois clique em Sincronizar."
+                    );
+
+
+                })
+                .catch(function (erro) {
+
+
+                    conexao(false);
+
+
+                    mensagem(
+                        erro.message ||
+                        "Erro ao conectar.",
+                        true
+                    );
+
+
+                })
+                .then(function () {
+
+
+                    conectando = false;
+
+
+                    connectButton.disabled =
+                        false;
+
+
+                    connectButton.textContent =
+                        "Acessar Sala do Futuro";
+
+
+                });
+
+            }
+
+
+            function sincronizar() {
+
+                if (sincronizando) {
+                    return;
+                }
+
+
+                sincronizando = true;
+
+
+                syncButton.disabled =
+                    true;
+
+
+                syncButton.textContent =
+                    "Sincronizando...";
+
+
+                mensagem(
+                    "Sincronizando as atividades..."
+                );
+
+
+                fetch(
+                    "/api/sala-do-futuro/sincronizar",
+                    {
+                        method: "GET",
+                        cache: "no-store"
+                    }
+                )
+                .then(function (resposta) {
+
+                    return resposta.json();
+
+                })
+                .then(function (dados) {
+
+
+                    if (
+                        dados.sucesso !== true
+                    ) {
+
+                        throw new Error(
+                            dados.erro ||
+                            "Erro na sincronização."
+                        );
+
+                    }
+
+
+                    conexao(true);
+
+
+                    atualizar(dados);
+
+
+                    notificacao(
+                        "Sincronização concluída"
+                    );
+
+
+                    mensagem(
+                        "Sincronização concluída com sucesso."
+                    );
+
+
+                })
+                .catch(function (erro) {
+
+
+                    mensagem(
+                        erro.message ||
+                        "Erro ao sincronizar.",
+                        true
+                    );
+
+
+                    notificacao(
+                        "Erro na sincronização"
+                    );
+
+
+                })
+                .then(function () {
+
+
+                    sincronizando = false;
+
+
+                    syncButton.disabled =
+                        false;
+
+
+                    syncButton.textContent =
+                        "Sincronizar";
+
+
+                });
+
+            }
+
+
+            function atualizarStatus() {
+
+
+                fetch(
+                    "/api/sala-do-futuro/status",
+                    {
+                        method: "GET",
+                        cache: "no-store"
+                    }
+                )
+                .then(function (resposta) {
+
+                    return resposta.json();
+
+                })
+                .then(function (dados) {
+
+
+                    conexao(
+                        dados.conectado === true
+                    );
+
+
+                    if (
+                        dados.total !== undefined
+                    ) {
+
+                        atualizar(dados);
+
+                    }
+
+                })
+                .catch(function () {
+
+                });
+
+            }
+
+
+            connectButton.onclick =
+                conectar;
+
+
+            syncButton.onclick =
+                sincronizar;
+
+
+            refreshButton.onclick =
+                function () {
+
+                    atualizarStatus();
+
+                };
+
+
+            mostrarHistorico();
+
+
+            conexao(false);
+
+
+            atualizarStatus();
+
+
+            setInterval(
+                atualizarStatus,
+                10000
+            );
+
+
+        }
+    );
+
+</script>
+```
+
+</body>
+
+</html>
